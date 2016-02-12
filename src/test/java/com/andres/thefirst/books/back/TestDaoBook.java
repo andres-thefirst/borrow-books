@@ -66,4 +66,13 @@ public class TestDaoBook {
 			System.out.println(item.getUser());
 		}
 	}
+	
+	@Test
+	@Transactional
+	public void findById(){
+		
+		Book book = bookData.findById(1);
+		
+		System.out.println(book.getBook());
+	}
 }
